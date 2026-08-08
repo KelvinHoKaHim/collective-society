@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>筆記 · 集合社 Collective Society</title>
-  <meta name="description" content="集合社筆記與 PDF 分享（Google Drive）" />
+  <meta name="description" content="集合社筆記與 PDF 分享（自動從 Google Drive 更新）" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -25,52 +25,40 @@
   <main>
     <h1 class="section-title" style="margin-bottom:0.5rem;">筆記</h1>
     <p style="color:var(--text-muted); margin-bottom:2rem;">
-      這裡的 PDF 存放於 Google Drive。點擊「開啟 PDF」會在新分頁打開 Drive 預覽或下載頁面。
+      這裡的 PDF 存放於 Google Drive，並由 GitHub Actions 自動同步。點擊「開啟 PDF」會在新分頁打開。
     </p>
 
     <div class="cards" style="margin-bottom:2.5rem;">
-      <!-- 範例筆記 1：請把 YOUR_FILE_ID 換成真實的 Google Drive File ID -->
       <article class="note-card">
-        <div class="note-meta">2026-07-12 · 現象學</div>
-        <h3>Husserl《觀念 I》選讀筆記</h3>
-        <p>關於先驗還原、自然態度與意識結構的整理。適合第一次接觸現象學的同學。</p>
-        <a class="btn" href="https://drive.google.com/file/d/YOUR_FILE_ID_1/view" target="_blank" rel="noopener">開啟 PDF</a>
+        <div class="note-meta">2026-08-08 · 數學 / 哲學</div>
+        <h3>MATH4050_實數分析_補充資料</h3>
+        <p>點擊下方按鈕開啟 PDF。</p>
+        <a class="btn" href="https://drive.google.com/file/d/1ryS7A8uRjYAkbOGfjrm0JfoeOSpc0yLO/view?usp=drivesdk" target="_blank" rel="noopener">開啟 PDF</a>
       </article>
-
       <article class="note-card">
-        <div class="note-meta">2026-05-20 · 數學哲學</div>
-        <h3>數學中的直觀與形式</h3>
-        <p>從 Kant、Husserl 到當代數學基礎的幾點觀察。聚會後整理。</p>
-        <a class="btn" href="https://drive.google.com/file/d/YOUR_FILE_ID_2/view" target="_blank" rel="noopener">開啟 PDF</a>
+        <div class="note-meta">2026-08-08 · 筆記</div>
+        <h3>向量微積分之物理動機</h3>
+        <p>點擊下方按鈕開啟 PDF。</p>
+        <a class="btn" href="https://drive.google.com/file/d/1B4rDmk1IFZWUaa1GVhWp3ONfeAaHxpnW/view?usp=drivesdk" target="_blank" rel="noopener">開啟 PDF</a>
       </article>
-
       <article class="note-card">
-        <div class="note-meta">2026-03-15 · 導論</div>
-        <h3>集合社第一次聚會紀錄</h3>
-        <p>成立緣起、成員介紹與初步讀書計劃。</p>
-        <a class="btn" href="https://drive.google.com/file/d/YOUR_FILE_ID_3/view" target="_blank" rel="noopener">開啟 PDF</a>
+        <div class="note-meta">2026-08-08 · 數學 / 哲學</div>
+        <h3>MATH1010歷年試卷參考答案_2024_</h3>
+        <p>點擊下方按鈕開啟 PDF。</p>
+        <a class="btn" href="https://drive.google.com/file/d/11nGItJQD5UJniF4R43Yx8tSdpXwOgXuP/view?usp=drivesdk" target="_blank" rel="noopener">開啟 PDF</a>
+      </article>
+      <article class="note-card">
+        <div class="note-meta">2026-07-03 · 數學 / 哲學</div>
+        <h3>MATH3070_拓樸學入門_概要</h3>
+        <p>點擊下方按鈕開啟 PDF。</p>
+        <a class="btn" href="https://drive.google.com/file/d/1kcVMPu7pHuaRwdQkffsJU21MDc_Bp_zS/view?usp=drivesdk" target="_blank" rel="noopener">開啟 PDF</a>
       </article>
     </div>
 
-    <!-- 可選：整個資料夾嵌入（如果所有筆記放在同一個公開資料夾） -->
-    <!--
-    <section class="section">
-      <h2 class="section-title">Drive 資料夾檢視</h2>
-      <p style="color:var(--text-muted); margin-bottom:1rem;">下面直接嵌入公開的 Google Drive 資料夾：</p>
-      <iframe
-        src="https://drive.google.com/embeddedfolderview?id=YOUR_FOLDER_ID#list"
-        style="width:100%; height:480px; border:1px solid var(--border); border-radius:12px;"
-        allow="autoplay">
-      </iframe>
-    </section>
-    -->
-
     <div class="hint">
-      <strong>如何加入新筆記：</strong><br>
-      1. 把 PDF 上傳到 Google Drive，並設為「知道連結的任何人」可檢視。<br>
-      2. 從分享連結中取出 File ID（<code>/file/d/<strong>FILE_ID</strong>/view</code> 中間那段）。<br>
-      3. 在本頁複製一個 <code>&lt;article class="note-card"&gt;</code>，改標題、描述，並把 <code>YOUR_FILE_ID</code> 換成真實 ID。<br>
-      4. Commit &amp; push 後，網站會自動更新。
+      <strong>自動更新說明：</strong><br>
+      本頁由 <code>generate_notes.py</code> + GitHub Actions 從指定的 Google Drive 資料夾產生。<br>
+      只要把新的 PDF 放進該資料夾（並設為「知道連結的任何人可檢視」），大約每小時會自動更新一次。
     </div>
   </main>
 
